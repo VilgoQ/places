@@ -3,22 +3,18 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const App());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class App extends StatelessWidget {
+  const App({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Places',
-      theme: ThemeData(
-        fontFamily: 'Roboto',
-        primarySwatch: Colors.blue,
-      ),
-      home: MyFirstStatefulWidget(),
+      title: 'xDDD',
+      home: MyFirstWidget(),
     );
   }
 }
@@ -26,6 +22,8 @@ class MyApp extends StatelessWidget {
 // ignore: prefer-single-widget-per-file
 class MyFirstWidget extends StatelessWidget {
   int _counter = 0;
+
+  //Type getContext() => context.runtimeType;
 
   MyFirstWidget({Key? key}) : super(key: key);
 
@@ -61,4 +59,6 @@ class _MyFirstStatefulWidgetState extends State<MyFirstStatefulWidget> {
       ),
     );
   }
+
+  Type getContext() => context.runtimeType;
 }
